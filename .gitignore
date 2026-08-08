@@ -1,0 +1,45 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Python Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Local databases
+*.db
+*.sqlite3
+backend/aegisstrike.db
+
+# Environment variables (secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.cproject
+.settings/
+*.launch
+*.sublime-workspace
+.DS_Store
+Thumbs.db
