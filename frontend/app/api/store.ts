@@ -1,6 +1,6 @@
 export interface WAFRule {
   id: number;
-  name: str;
+  name: string;
   description: string;
   is_active: boolean;
 }
