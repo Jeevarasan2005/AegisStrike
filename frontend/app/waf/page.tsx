@@ -9,7 +9,7 @@ export default function WAFManagement() {
 
   const fetchRules = async () => {
     try {
-      const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+      const API = process.env.NEXT_PUBLIC_API_URL || "";
       const res = await fetch(`${API}/api/waf/rules`);
       if (res.ok) {
         const data = await res.json();
@@ -28,7 +28,7 @@ export default function WAFManagement() {
 
   const toggleRule = async (id: number, currentStatus: boolean) => {
     try {
-      const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+      const API = process.env.NEXT_PUBLIC_API_URL || "";
       const res = await fetch(`${API}/api/waf/rules/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },

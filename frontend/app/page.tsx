@@ -13,7 +13,7 @@ const mockChartData = [
   { name: '20:00', blocked: 2390, allowed: 3800 },
 ];
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API = process.env.NEXT_PUBLIC_API_URL || "";
 
 export default function Dashboard() {
   const [targetRepo, setTargetRepo] = useState("");
